@@ -20,9 +20,13 @@
 
 using std::placeholders::_1;
 
+// Example of subscriber node that inherits from rclcpp::Node
 class MinimalSubscriber : public rclcpp::Node
 {
   public:
+    // Subscriber constructor, setting node name "minimal_subscriber"
+    // Create subscription, and receive message of type String,
+    // with the queue size of 10, binding topic_callback function
     MinimalSubscriber() : Node("minimal_subscriber")
     {
         subscription_ = this->create_subscription<std_msgs::msg::String>(
@@ -30,6 +34,7 @@ class MinimalSubscriber : public rclcpp::Node
     }
 
   private:
+    // RCLCPP_INFO macro ensures every published message is printed to console
     void topic_callback(const std_msgs::msg::String &msg) const
     {
         RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.data.c_str());
@@ -39,7 +44,10 @@ class MinimalSubscriber : public rclcpp::Node
 
 int main(int argc, char *argv[])
 {
+    // initializes ROS2
     rclcpp::init(argc, argv);
+
+    // starts processing data from the node
     rclcpp::spin(std::make_shared<MinimalSubscriber>());
     rclcpp::shutdown();
     return 0;

@@ -24,11 +24,8 @@ Inside of `Settings/Open Settings (JSON)` paste the following:
     "editor.codeActionsOnSave": {
         "source.fixAll": true
     },
-    "C_Cpp.intelliSenseEngine": "Default",
-    "C_Cpp.default.includePath": [
-        "${workspaceFolder}/**",
-        "/opt/ros/humble/include/**"
-    ],
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
     "clang-format.executable": "/usr/bin/clang-format",
     "clang-format.language.c.enable": true,
     "clang-format.language.cpp.enable": true,
@@ -53,7 +50,30 @@ Inside of `Settings/Open Settings (JSON)` paste the following:
         "editor.semanticHighlighting.enabled": true
     },
     "xmlTools.enableXmlTreeView": true,
-    "xmlTools.xmlFormatterImplementation": "v2"
+    "xmlTools.xmlFormatterImplementation": "v2",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/opt/ros/humble/include/**"
+    ],
+    "C_Cpp.maxConcurrentThreads": 4,
+    "C_Cpp.commentContinuationPatterns": [
+        {
+            "begin": "/*",
+            "continue": " *",
+        },
+        {
+            "begin": " *",
+            "continue": " *"
+        }
+    ],
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+    "C_Cpp.inlayHints.parameterNames.enabled": true,
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "telemetry.telemetryLevel": "crash"
 }
 ```
 

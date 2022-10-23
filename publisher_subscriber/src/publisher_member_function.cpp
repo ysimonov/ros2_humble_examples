@@ -25,9 +25,14 @@ using namespace std::chrono_literals;
 /* This example creates a subclass of Node and uses std::bind() to register a
  * member function as a callback from the timer. */
 
+// This is the node class that inherits from rclcpp::Node
 class MinimalPublisher : public rclcpp::Node
 {
   public:
+    // Constructs the Node name "minimal_publisher"
+    // The publisher is initialized with String type and topic name "topic"
+    // The required queue size is set to 10
+    // timer_ is initialized, which causes timer_callback function to be executed every 500ms
     MinimalPublisher() : Node("minimal_publisher"), count_(0)
     {
         publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
@@ -35,6 +40,9 @@ class MinimalPublisher : public rclcpp::Node
     }
 
   private:
+    // Timer callback function intended to publish string message
+    // with the incremented count_
+    // RCLCPP_INFO macro ensures every published message is printed to console
     void timer_callback()
     {
         auto message = std_msgs::msg::String();
@@ -49,7 +57,10 @@ class MinimalPublisher : public rclcpp::Node
 
 int main(int argc, char *argv[])
 {
+    // initializes ROS2
     rclcpp::init(argc, argv);
+
+    // starts processing data from the node, including timer callbacks
     rclcpp::spin(std::make_shared<MinimalPublisher>());
     rclcpp::shutdown();
     return 0;
