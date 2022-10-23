@@ -1,0 +1,17 @@
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/lib/service_client/server
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/lib/service_client/client
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/ament_index/resource_index/package_run_dependencies/service_client
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/ament_index/resource_index/parent_prefix_path/service_client
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/environment/ament_prefix_path.sh
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/environment/ament_prefix_path.dsv
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/environment/path.sh
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/environment/path.dsv
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/local_setup.bash
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/local_setup.sh
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/local_setup.zsh
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/local_setup.dsv
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/package.dsv
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/ament_index/resource_index/packages/service_client
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/cmake/service_clientConfig.cmake
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/cmake/service_clientConfig-version.cmake
+/home/yevgeniy/Documents/GitHub/ros2_humble_examples/service_client/install/service_client/share/service_client/package.xml
