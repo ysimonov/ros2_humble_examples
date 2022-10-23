@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000264] (-) JobUnselected: {'identifier': 'cpp_publisher_subscriber'}
-[0.000311] (-) JobUnselected: {'identifier': 'service_client'}
-[0.000406] (-) EventReactorShutdown: {}
