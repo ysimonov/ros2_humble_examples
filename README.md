@@ -1,12 +1,11 @@
-# ros2_publisher_subscriber
-ROS Humble Examples
+# ROS2 Humble Examples
 
-# Install Ros2 Humble
+### Install Ros2 Humble
 - Follow https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html
 - Instead of `ros-humble-desktop` use `ros-humble-desktop-full`
 - Inside of `~/.bashrc` add `source /opt/ros/humble/setup.bash` after installation of ros2
 
-# Install Additional VSCode Extensions
+### Install Additional VSCode Extensions
 - `sudo apt install clang-format`
 - CMake
 - CMake Tools
@@ -15,7 +14,7 @@ ROS Humble Examples
 - ROS
 - XML Tools
 
-# Setup VSCode
+### Setup VSCode
 Inside of `Settings/Open Settings (JSON)` paste the following:
 ```json
 {
@@ -58,10 +57,10 @@ Inside of `Settings/Open Settings (JSON)` paste the following:
 }
 ```
 
-# How to set up this type of project
+### How to set up this type of project
 - `ros2 pkg create --build-type ament_cmake ${package_name} --dependencies ${list_of_dependencies}` (replace `${package_name}` with your own name, for example, `cpp_publisher_subscriber`, in my case, and `${list_of_dependencies}` with your dependencies, separated by space, for example `rclcpp example_interfaces`)
 
-# How to build the package
+### How to build the package
 - `cd cpp_publisher_subscriber` 
 - Check for missing dependencies before building the package `rosdep install -i --from-path src --rosdistro humble -y`
 - Build the package `colcon build --packages-select publisher_subscriber`
